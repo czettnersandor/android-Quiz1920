@@ -18,15 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".QuizActivity"
-            android:label="@string/title_activity_quiz"
-            android:parentActivityName=".IntroActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.czettner.quiz1920.IntroActivity" />
-        </activity>
+        <activity android:name=".QuizActivity"></activity>
     </application>
 
 </manifest>
