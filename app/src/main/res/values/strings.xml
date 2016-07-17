@@ -21,5 +21,9 @@
         ]]>
     </string>
     <string name="copyright_wikipedia">Copyright: Wikipedia</string>
+    <string name="this_quiz">This quiz is about the prior affairs, the unjust treaty and the following course of events.</string>
+    <string name="take_quiz">Take the Quiz</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

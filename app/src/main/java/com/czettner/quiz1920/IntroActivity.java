@@ -1,5 +1,6 @@
 package com.czettner.quiz1920;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -47,5 +48,14 @@ public class IntroActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Take the quiz
+     * @param view View
+     */
+    public void takeQuiz(View view) {
+        Intent intent = new Intent(this, QuizActivity.class);
+        startActivity(intent);
     }
 }
