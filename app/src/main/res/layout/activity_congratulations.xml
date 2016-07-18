@@ -9,4 +9,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.czettner.quiz1920.CongratulationsActivity">
 
+    <TextView
+        android:id="@+id/congrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Congratulations!"
+        android:textSize="@dimen/congratulations_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/congrat">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/points_size"
+            android:text="4"/>
+        <TextView
+            android:id="@+id/actual_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="@dimen/points_size"
+            android:text="/"/>
+        <TextView
+            android:id="@+id/max_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/points_size"
+            android:text="5"/>
+    </LinearLayout>
 </RelativeLayout>
