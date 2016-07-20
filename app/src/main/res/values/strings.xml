@@ -48,4 +48,6 @@
     <string name="poland">Poland</string>
     <string name="russia">Russia</string>
     <string name="submit">Submit</string>
+    <string name="sorry">Sorry, try again!</string>
+    <string name="perfect">Perfect!</string>
 </resources>

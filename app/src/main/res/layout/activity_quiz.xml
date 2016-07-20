@@ -98,6 +98,7 @@
             android:layout_height="wrap_content"
             android:text="@string/which_year"/>
         <EditText
+            android:id="@+id/answer_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"/>
@@ -111,10 +112,12 @@
             android:layout_height="wrap_content"
             android:text="@string/romania"/>
         <CheckBox
+            android:id="@+id/answer_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/poland"/>
         <CheckBox
+            android:id="@+id/answer_4b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/russia"/>
@@ -127,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/answer_4"
+                android:id="@+id/answer_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/felvidek"/>
