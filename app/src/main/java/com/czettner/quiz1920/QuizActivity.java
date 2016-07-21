@@ -10,12 +10,31 @@ import android.widget.RadioButton;
 
 public class QuizActivity extends AppCompatActivity {
 
-    public static int MAX_POINTS = 6;
+    public static final int MAX_POINTS = 6;
+
+    RadioButton answer1;
+    RadioButton answer2;
+    RadioButton answer3;
+    EditText answerYear;
+    CheckBox answer4a;
+    CheckBox answer4b;
+    CheckBox answer4c;
+    RadioButton answer5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        // Instantiate inputs to avoid NullPointerException warnings
+        answer1 = (RadioButton) findViewById(R.id.answer_1);
+        answer2 = (RadioButton) findViewById(R.id.answer_2);
+        answer3 = (RadioButton) findViewById(R.id.answer_3);
+        answerYear = (EditText) findViewById(R.id.answer_year);
+        answer4a = (CheckBox) findViewById(R.id.answer_4a);
+        answer4b = (CheckBox) findViewById(R.id.answer_4b);
+        answer4c = (CheckBox) findViewById(R.id.answer_4c);
+        answer5 = (RadioButton) findViewById(R.id.answer_5);
     }
     public void onSubmit(View view) {
         Intent i = new Intent(this, CongratulationsActivity.class);
@@ -27,33 +46,26 @@ public class QuizActivity extends AppCompatActivity {
     private int calculatePoints() {
         int points = 0;
 
-        RadioButton answer1 = (RadioButton) findViewById(R.id.answer_1);
         if (answer1.isChecked()) {
             points++;
         }
 
-        RadioButton answer2 = (RadioButton) findViewById(R.id.answer_2);
         if (answer2.isChecked()) {
             points++;
         }
 
-        RadioButton answer3 = (RadioButton) findViewById(R.id.answer_3);
         if (answer3.isChecked()) {
             points++;
         }
 
-        EditText answerYear = (EditText) findViewById(R.id.answer_year);
         if (answerYear.getText().toString().trim().equals("1920")) {
             points++;
         }
 
-        CheckBox answer4 = (CheckBox) findViewById(R.id.answer_4);
-        CheckBox answer4b = (CheckBox) findViewById(R.id.answer_4b);
-        if (answer4.isChecked() && answer4b.isChecked()) {
+        if (!answer4a.isChecked() && answer4b.isChecked() && answer4c.isChecked()) {
             points++;
         }
 
-        RadioButton answer5 = (RadioButton) findViewById(R.id.answer_5);
         if (answer5.isChecked()) {
             points++;
         }

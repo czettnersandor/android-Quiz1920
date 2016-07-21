@@ -108,16 +108,17 @@
             android:layout_height="wrap_content"
             android:text="@string/which_countries"/>
         <CheckBox
+            android:id="@+id/answer_4a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/romania"/>
         <CheckBox
-            android:id="@+id/answer_4"
+            android:id="@+id/answer_4b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/poland"/>
         <CheckBox
-            android:id="@+id/answer_4b"
+            android:id="@+id/answer_4c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/russia"/>
